@@ -45,4 +45,4 @@ tidysummary <- dcast(dfsumm, subject ~ activity, mean)
 
 ## Write tidy data
 write.table(df, "tidydata.txt")
-write.table(tidysummary, "tidysummary.txt")
+write.table(tidysummary, "tidysummary.txt", row.names = FALSE)
