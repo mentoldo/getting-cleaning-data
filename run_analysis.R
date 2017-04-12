@@ -36,13 +36,13 @@ names(df) <- tolower(gsub("-|\\(|\\)", "", names(df)))
 names(df) <- tolower(gsub("bodybody", "body", names(df)))
 
 ## Bind activity and subject column
-df <- cbind(df, activity, subject)
+df <- cbind(subject, activity, df)
 
 ## Average data set with the average of each variable for each activity and each subject
 library(reshape2)
-dfsumm <- melt(df, id = c("activity", "subject"))
-tidysummary <- dcast(dfsumm, subject ~ activity, mean)
+tidysummary <- aggregate(df[,3:68], list(subject = df$subject, activity = df$activity), mean)
 
 ## Write tidy data
 write.table(df, "tidydata.txt")
 write.table(tidysummary, "tidysummary.txt", row.names = FALSE)
+

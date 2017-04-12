@@ -17,6 +17,8 @@ The set of variables that were estimated from these signals are:
 # CodeBook
 Variable             | Description
 ------               |----     
+subject               |Identifier of the subject who carried out the experiment. Integer number from 1 to 30
+activity              |Activities wearing the smartphones. Factor with 6 levels: walking, walking_upstairs, walking_downstairs, sitting, standing, laying
 tbodyaccmeanx        | Mean of x-axis time domain signal of body linear acceleration
 tbodyaccmeany        | Mean of y-axis time domain signal of body linear acceleration
 tbodyaccmeanz        | Mean of z-axis time domain signal of body linear acceleration
@@ -83,5 +85,3 @@ fbodygyromagmean      |FFT applied to tbodygyromagmean
 fbodygyromagstd       |FFT applied to tbodygyromagstd
 fbodygyrojerkmagmean  |FFT applied to tbodygyrojerkmagmean
 fbodygyrojerkmagstd   |FFT applied to tbodygyrojerkmagstd
-activity              |Activities wearing the smartphones. Factor with 6 levels: walking, walking_upstairs, walking_downstairs, sitting, standing, laying
-subject               |Identifier of the subject who carried out the experiment. Integer number from 1 to 30

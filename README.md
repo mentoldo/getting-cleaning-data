@@ -17,3 +17,4 @@ The following objectives were pursued:
 * 'run_analysis.R'. R-script containing the process for obtaining 'tidydata.txt' and 'tidysummary.txt' datasets.
 * 'tidydata.txt'. Clean and tidy dataset as request in the points 1 to 4.
 * 'tidysummary.txt'. Clean and tidy datasets with the average of each variable for each activity and each subject.
+* 'CodeBook.md'. The codebook of datasets variables
