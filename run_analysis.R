@@ -39,7 +39,6 @@ names(df) <- tolower(gsub("bodybody", "body", names(df)))
 df <- cbind(subject, activity, df)
 
 ## Average data set with the average of each variable for each activity and each subject
-library(reshape2)
 tidysummary <- aggregate(df[,3:68], list(subject = df$subject, activity = df$activity), mean)
 
 ## Write tidy data
